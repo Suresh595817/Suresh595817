@@ -1,0 +1,15 @@
+arr = [2, 3, 4, 7, 11]
+k = 5
+missing = 0
+expected = 1
+for num in arr:
+    while expected < num:
+        missing += 1
+        if missing == k:
+            print(expected)
+            break
+        expected += 1
+    expected += 1
+else:
+    print(expected + k - missing - 1)
+ 
